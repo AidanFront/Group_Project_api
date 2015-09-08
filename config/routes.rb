@@ -2,9 +2,18 @@ Rails.application.routes.draw do
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   #Get/put commant    # controller : action
-  get 'api/v1/info' => 'conference_infos#info'
+  
+  # Conference data
+  get 'api/v1/info' => 'confdetails#info'
 
-  # create 'api/:speaker/info' => 'speaker#create'
+  # Speaker inforamtion
+  get 'api/v1/info/speaker' => 'speakers#index'
+  get 'api/v1/info/speaker/:id' => 'speakers#show'
 
-   resources :conference_infos
+  get 'api/v1/info/talk' => 'talks#index'
+  get 'api/v1/info/talk/:id' => 'talks#show'
+
+   resources :confdetails
+   resources :speakers
+   resources :talks
 end

@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150904022724) do
+ActiveRecord::Schema.define(version: 20150908045102) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "confdetails", force: :cascade do |t|
+    t.string   "name"
+    t.date     "date"
+    t.string   "venue"
+    t.string   "address"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.string   "time"
+    t.string   "twitterhandle"
+  end
 
   create_table "conference_infos", force: :cascade do |t|
     t.string   "name"
@@ -24,6 +35,24 @@ ActiveRecord::Schema.define(version: 20150904022724) do
     t.string   "address"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "speakers", force: :cascade do |t|
+    t.string   "name"
+    t.string   "background"
+    t.string   "github"
+    t.string   "twitter"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "talks", force: :cascade do |t|
+    t.string   "title"
+    t.text     "description"
+    t.string   "time"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.integer  "speaker_id"
   end
 
 end
