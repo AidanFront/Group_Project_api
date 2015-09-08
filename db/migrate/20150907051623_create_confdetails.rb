@@ -1,10 +1,10 @@
-class CreateConferenceInfos < ActiveRecord::Migration
+class CreateConfdetails < ActiveRecord::Migration
   def change
-    create_table :conference_infos do |t|
+    create_table :confdetails do |t|
       t.string :name
       t.date :date
       t.time :time
-      t.text :venue
+      t.string :venue
       t.string :address
 
       t.timestamps null: false
