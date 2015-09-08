@@ -6,11 +6,11 @@ Rails.application.routes.draw do
   get 'api/v1/info' => 'confdetails#info'
 
   # Speaker inforamtion
-  get 'api/v1/info/speaker' => 'speakers#index'
-  get 'api/v1/info/speaker/:id' => 'speakers#show'
+  get 'api/v1/info/speakers' => 'speakers#index'
+  get 'api/v1/info/speakers/:id' => 'speakers#show'
 
-  get 'api/v1/info/talk' => 'talks#index'
-  get 'api/v1/info/talk/:id' => 'talks#show'
+  get 'api/v1/info/talks' => 'talks#index'
+  get 'api/v1/info/talks/:id' => 'talks#show'
 
    resources :confdetails
    resources :speakers
