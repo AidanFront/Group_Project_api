@@ -2,12 +2,12 @@ class TalksController < ApplicationController
 
 	def index
 		talks = Talk.all
-		render json: talks 
+		render json: talks.to_json(methods: :speaker)
 	end
 
 	def show
 		talk = Talk.find(params[:id])
-		render json: talk
+		render json: talk.to_json(methods: :speaker)
 	end
 
 end
