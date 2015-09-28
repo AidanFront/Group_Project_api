@@ -11,14 +11,14 @@ The project was split into 3 parts.
 
 ####Team Members
 
- Role                  | API       | MAIN SITE | TWITTERBOT	
---------------------- | ---------- | --------------- | ----------------------
- Product Owner | Hugh     | Elmer         | Quentin
---------------------- | ---------- | --------------- | ----------------------
- Tech Lead        | Aidan    | Quentin      | Hugh
---------------------- | ---------- | --------------- | ----------------------
- Design Lead     | Elmer    | Jenny         |Jenny
---------------------- | ---------- | --------------- | ----------------------
- Scrum Master   | Jenny   | Aidan          | Elmer
+ Role          | API       | MAIN SITE | TWITTERBOT	
+-------------- | --------- | --------- | -----------
+ Product Owner | Hugh      | Elmer     | Quentin
+-------------- | --------- | --------- | -----------
+ Tech Lead     | Aidan     | Quentin   | Hugh
+-------------- | --------- | --------- | -----------
+ Design Lead   | Elmer     | Jenny     | Jenny
+-------------- | --------- | --------- | -----------
+ Scrum Master  | Jenny     | Aidan     | Elmer
 
 My role was as the *'Tech Lead'* to create the API and the *'Scrum Master'* for the main site.
